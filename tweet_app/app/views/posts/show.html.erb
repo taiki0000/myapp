@@ -4,7 +4,7 @@
       <%= @post.content %>
       <div class="post-time">
         <!-- @postのcreated_atカラムのデータを表示してください -->
-        <%= @post.created_at.in_time_zone("Tokyo")%>
+        <%= @post.created_at.in_time_zone("Tokyo").strftime("%Y/%m/%d %H:%M")%>
       </div>
     </div>
   </div>
