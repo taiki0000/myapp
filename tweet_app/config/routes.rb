@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   post 'posts/create' => "posts#create"
+  post 'posts/new' => "posts#new"
   get 'posts/new' => "posts#new"
   get 'posts/index' => "posts#index"
   get 'posts/:id' => "posts#show"
