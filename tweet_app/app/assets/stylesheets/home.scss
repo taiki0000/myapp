@@ -70,6 +70,8 @@ header {
   position: absolute;
   z-index: 1;
   width: 100%;
+  background-color: white;
+  opacity: 0.5;
 }
 
 .header-logo {
@@ -108,6 +110,8 @@ header {
   padding-right: 5px;
 }
 
+/* 登録フォーフに関する記述ーーーーーーーーーーーーー*/
+
 .header-menus input[type="submit"] {
   padding: 0 20px;
   float: left;
@@ -140,12 +144,14 @@ a.btn_black:hover{
   height: auto;
   min-height: 100%;
   color: white;
-  background-color: #3ecdc6;
+  background-color: #ffe8a1;
   background-repeat: no-repeat;
   background-position: center 50%;
   background-size: cover;
   background-image: url("/sample.jpg");
 }
+
+
 
 .top-message {
   position: relative;
