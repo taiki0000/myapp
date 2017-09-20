@@ -3,17 +3,17 @@
     <div class="form-heading">新規ユーザー登録</div>
     <div class="form users-form">
       <div class="form-body">
-        <%= form_tag("/users/create") do %>
+        <%= form_tag("/users/create",{multipart: true}) do %>
             <% @user.errors.full_messages.each do |message| %>
                 <div class="form-error">
                   <%= message %>
                 </div>
             <% end %>
-        <p>ユーザー名</p>
-        <input name="name", value="<%= @user.name %>">
-        <p>メールアドレス</p>
-        <input name="email", value="<%= @user.email %>">
-        <input type="submit" value="新規登録">
+            <p>ユーザー名</p>
+            <input name="name", value="<%= @user.name %>">
+            <p>メールアドレス</p>
+            <input name="email", value="<%= @user.email %>">
+            <input type="submit" value="新規登録">
         <% end %>
       </div>
     </div>
