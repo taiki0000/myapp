@@ -1,0 +1,13 @@
+<div class="main users-index">
+  <div class="container">
+    <h1 class="users-heading">ユーザー一覧</h1>
+    <!-- 以下の<% %>を使ってeach文を追加してください -->
+    <% @users.each do |user| %>
+    <div class="users-index-item">
+      <div class="user-right">
+        <%= link_to "#{user.name}#{user.id}", "/users/#{user.id}" %>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>

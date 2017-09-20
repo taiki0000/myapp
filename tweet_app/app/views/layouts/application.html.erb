@@ -21,12 +21,24 @@
       <%= link_to "Questions", "/posts/index" %>
     </li>
     <li>
+      <%= link_to "ユーザー一覧", "/users/index" %>
+    </li>
+    <li>
+      <%= link_to "新規登録", "/users/signup" %>
+    </li>
+    <li>
       <div class="btnbtn">
       <%= link_to "Ask Question", "/posts/new", class:"btn btn-default btn_black"%>
       </div>
     </li>
   </ul>
 </header>
+<!-- flash[:notice]に代入されたメッセージを表示 -->
+<% if flash[:notice] %>
+    <div class="flash">
+      <%= flash[:notice] %>
+    </div>
+<% end %>
 <%= yield %>
 </body>
 </html>
