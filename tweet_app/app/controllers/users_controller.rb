@@ -40,7 +40,7 @@ class UsersController < ApplicationController
       redirect_to("/users/#{@user.id}")
       flash[:notice] = "ユーザー情報を編集しました"
     else
-      render("users/edit")
+      render("/users/edit")
     end
 
   end
@@ -50,5 +50,20 @@ class UsersController < ApplicationController
 
     redirect_to("/")
     flash[:notice] = "退会しました"
+  end
+  def login_form
+  end
+  def login
+    #ログインの時の処理
+    @user = User.find_by(email: params[:email], password: params[:password])
+    if @user
+      flash[:notice] = "ログインしました"
+      redirect_to("/posts/index")
+    else
+      @error_message = "メールアドレスまたは．パスワードが正しくありません．"
+      @email = params[:email]
+      @password = params[:password]
+      render("/users/login_form")
+    end
   end
 end

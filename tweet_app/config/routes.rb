@@ -5,9 +5,10 @@ Rails.application.routes.draw do
   post 'posts/:id/update' => "posts#update"
   post 'posts/:id/destroy' => "posts#destroy"
   post 'users/create' => "users#create"
-
   post 'users/:id/update' => "users#update"
   post 'users/:id/destroy' => "users#destroy"
+  post 'login' => "users#login"
+
   get 'posts/new' => "posts#new"
   get 'posts/index' => "posts#index"
   get 'posts/:id' => "posts#show"
@@ -16,7 +17,7 @@ Rails.application.routes.draw do
   get 'users/index' => "users#index"
   get 'users/signup' => "users#new"
   get 'users/:id' => "users#show"
-
+  get 'login' => "users#login_form"
   get '/' => "home#top"
   get 'about' => "home#about"
 
