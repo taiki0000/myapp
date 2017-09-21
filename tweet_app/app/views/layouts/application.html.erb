@@ -14,26 +14,32 @@
     <%= link_to("SQill", "/") %>
   </div>
   <ul class="header-menus">
-    <li>
-      <%= link_to "SQillとは", "/about" %>
-    </li>
-    <li>
-      <%= link_to "Questions", "/posts/index" %>
-    </li>
-    <li>
-      <%= link_to "ユーザー一覧", "/users/index" %>
-    </li>
-    <li>
-      <%= link_to "新規登録", "/users/signup" %>
-    </li>
-    <li>
-      <%= link_to "ログイン", "/login" %>
-    </li>
-    <li>
-      <div class="btnbtn">
-      <%= link_to "Ask Question", "/posts/new", class:"btn btn-default btn_black"%>
-      </div>
-    </li>
+    <% if @current_user %>
+        <li>
+          <%= link_to @current_user.name, "/users/#{session[:user_id]}" %>
+        </li>
+        <li>
+          <%= link_to "Questions", "/posts/index" %>
+        </li>
+        <li>
+          <div class="btnbtn">
+            <%= link_to "Ask Question", "/posts/new", class:"btn btn-default btn_black"%>
+          </div>
+        </li>
+        <li>
+          <%= link_to "ログアウト", "/logout", {method: :post}%>
+        </li>
+    <% else %>
+        <li>
+          <%= link_to "SQillとは", "/about" %>
+        </li>
+        <li>
+          <%= link_to "新しいアカウントの作成", "/users/signup" %>
+        </li>
+        <li>
+          <%= link_to "ログイン", "/login" %>
+        </li>
+    <% end %>
   </ul>
 </header>
 <!-- flash[:notice]に代入されたメッセージを表示 -->

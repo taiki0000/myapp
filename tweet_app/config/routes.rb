@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   post 'users/:id/update' => "users#update"
   post 'users/:id/destroy' => "users#destroy"
   post 'login' => "users#login"
-
+  post 'logout' => "users#logout"
   get 'posts/new' => "posts#new"
   get 'posts/index' => "posts#index"
   get 'posts/:id' => "posts#show"
