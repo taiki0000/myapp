@@ -41,6 +41,7 @@ GEM
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
     arel (8.0.0)
+    bcrypt (3.1.11)
     bindex (0.5.0)
     builder (3.2.3)
     byebug (9.1.0)
@@ -51,10 +52,6 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
-    carrierwave (1.1.0)
-      activemodel (>= 4.0.0)
-      activesupport (>= 4.0.0)
-      mime-types (>= 1.16)
     childprocess (0.7.1)
       ffi (~> 1.0, >= 1.0.11)
     coffee-rails (4.2.2)
@@ -192,9 +189,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt
   byebug
   capybara (~> 2.13)
-  carrierwave
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
