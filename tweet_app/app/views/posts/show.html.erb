@@ -1,14 +1,19 @@
 <div class="main posts-show">
   <div class="container">
     <div class="posts-show-item">
-      <%= @post.content %>
+      <div class="post-user-name">
+        <img src="<%= "/user_images/#{@user.image_name}" %>">
+        <% link_to "詳細","/users/#{@user_id}" %>
+      </div>
+      <p>
+        <%= @post.content %>
+      </p>
       <div class="post-time">
-        <!-- @postのcreated_atカラムのデータを表示してください -->
         <%= @post.created_at.in_time_zone("Tokyo").strftime("%Y/%m/%d %H:%M")%>
       </div>
       <div class="post-menus">
-        <%= link_to"編集", "/posts/#{@post.id}/edit" %>
-        <%= link_to("削除", "/posts/#{@post.id}/destroy", {method:"post"}) %>
+        <%= link_to("編集", "/posts/#{@post.id}/edit") %>
+        <%= link_to("削除", "/posts/#{@post.id}/destroy", {method: "post"}) %>
       </div>
     </div>
   </div>

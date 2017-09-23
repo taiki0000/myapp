@@ -6,14 +6,15 @@ class PostsController < ApplicationController
   end
   def show
     @post = Post.find_by(id:params[:id])
+    @user = User.find_by(id:@post.user_id)
   end
   def new
     @post = Post.new
   end
   def create
-    @post = Post.new(content:params[:content])
+    @post = Post.new(content:params[:content],user_id:@current_user.id)
 
-    if @post.save == true
+    if @post.save
       redirect_to("/posts/index")
       flash[:notice] = "投稿が完了しました"
     else
