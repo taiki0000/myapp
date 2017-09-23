@@ -3,18 +3,20 @@
     <div class="posts-show-item">
       <div class="post-user-name">
         <img src="<%= "/user_images/#{@user.image_name}" %>">
-        <% link_to "詳細","/users/#{@user_id}" %>
+        <%= link_to @user.name, "/users/#{@user.id}" %>
       </div>
       <p>
         <%= @post.content %>
       </p>
       <div class="post-time">
+        <!--　時刻の表示 -->
         <%= @post.created_at.in_time_zone("Tokyo").strftime("%Y/%m/%d %H:%M")%>
       </div>
       <div class="post-menus">
-        <%= link_to("編集", "/posts/#{@post.id}/edit") %>
-        <%= link_to("削除", "/posts/#{@post.id}/destroy", {method: "post"}) %>
+        <%= link_to"編集", "/posts/#{@post.id}/edit" %>
+        <%= link_to("削除", "/posts/#{@post.id}/destroy", {method:"post"}) %>
       </div>
     </div>
   </div>
 </div>
+
