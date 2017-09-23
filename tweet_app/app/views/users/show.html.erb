@@ -9,9 +9,29 @@
     </div>
     <div class="user-menus">
       <% if @user.id == @current_user.id %>
-          <%= link_to"プロフィールの編集", "/users/#{@user.id}/edit" %>
+          <%= link_to"編集", "/users/#{@user.id}/edit" %>
           <%= link_to("退会する", "/users/#{@user.id}/destroy", {method:"post"}) %>
       <% end %>
+    </div>
+    <div>
+
+    </div>
+    <div class="contentboxx">
+    <% @user.posts.each do |post| %>
+    <div class="users-index-item">
+          <div class="user-left">
+            <!-- ユーザーの画像が表示 -->
+            <img src="<%= "/user_images/#{post.user.image_name}" %>">
+          </div>
+          <div class="user-right">
+            <div class="user-name">
+              <!-- ユーザー名の表示 -->
+              <%= link_to post.user.name, "/users/#{post.user.id}" %>
+            </div>
+            <%= link_to(post.content, "/posts/#{post.id}") %>
+          </div>
+        </div>
+    <% end %>
     </div>
   </div>
 </div>

@@ -7,4 +7,8 @@ class User < ApplicationRecord
   validates :name, {presence:true}
   validates :password, {presence:true,length:{minimum: 4}}
 
+  def posts
+    return Post.where(user_id:self.id)
+  end
+
 end
