@@ -12,6 +12,16 @@
         <!--　時刻の表示 -->
         <%= @post.created_at.in_time_zone("Tokyo").strftime("%Y/%m/%d %H:%M")%>
       </div>
+      <% if Like.find_by(user_id:@current_user.id,post_id:@post.id) %>
+          <%= link_to("/likes/#{@post.id}/destroy",{method:"post"}) do %>
+              <span class="fa fa-heart like-btn-unlike"></span>
+          <% end %>
+      <% else %>
+          <%= link_to("/likes/#{@post.id}/create", {method:"post"}) do %>
+              <span class="fa fa-heart like-btn"></span>
+          <%end %>
+      <% end %>
+      <%= @like_count %>
       <% if @post.user_id == @current_user.id %>
       <div class="post-menus">
         <%= link_to"編集", "/posts/#{@post.id}/edit" %>

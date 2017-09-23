@@ -13,9 +13,12 @@
           <%= link_to("退会する", "/users/#{@user.id}/destroy", {method:"post"}) %>
       <% end %>
     </div>
-    <div>
+    <!-- 自分の投稿といいねした投稿を見れる -->
+    <ul class="user-tabs">
+      <li class="active"><%= link_to("投稿", "/users/#{@user.id}") %></li>
+      <li><%= link_to("いいね!", "/users/#{@user.id}/likes") %></li>
+    </ul>
 
-    </div>
     <div class="contentboxx">
     <% @user.posts.each do |post| %>
     <div class="users-index-item">

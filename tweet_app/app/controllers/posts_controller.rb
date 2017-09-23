@@ -9,6 +9,7 @@ class PostsController < ApplicationController
   def show
     @post = Post.find_by(id:params[:id])
     @user = @post.user
+    @like_count = Like.where(post_id:@post.id).count
   end
   def new
     @post = Post.new
@@ -52,4 +53,15 @@ class PostsController < ApplicationController
       redirect_to("/posts/index")
     end
   end
+  def create0
+    @like = Like.new(user_id:@current_user.id,post_id:params[:post_id])
+    @like.save
+    redirect_to("/posts/#{params[:post_id]}")
+  end
+  def destroy0
+    @like = Like.find_by(user_id:@current_user.id,post_id:params[:post_id])
+    @like.destroy
+    redirect_to("/posts/#{params[:post_id]}")
+  end
+
 end

@@ -36,11 +36,11 @@ class UsersController < ApplicationController
     @user.name = params[:name]
     @user.email =params[:email]
 
-    if params[:image]
+     params[:image]
       @user.image_name = "#{@user.id}.jpg"
       image = params[:image]
       File.binwrite("public/user_images/#{@user.image_name}",image.read)
-    end
+
 
     if @user.save
       redirect_to("/users/#{@user.id}")
@@ -84,5 +84,9 @@ class UsersController < ApplicationController
       flash[:notice] = "アクセス権限がありません"
       redirect_to("/posts/index")
     end
+  end
+  def likes
+    @user = User.find_by(id:params[:id])
+    @likes = Like.where(user_id:@user.id)
   end
 end
