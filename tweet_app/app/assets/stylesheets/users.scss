@@ -43,6 +43,12 @@
   width: 10%;
 }
 
+.user-left0 {
+  text-align: left;
+  margin-bottom: 10px;
+  color: #95989A;
+}
+
 .user-right {
   width: 90%;
   padding-left: 25px;
@@ -51,9 +57,26 @@
   vertical-align: middle;
 }
 
+.user-right0 {
+  padding-left: 25px;
+  float: left;
+  color: #95989A;
+}
+
 .user-menus{
   text-align: center;
 }
+
+.subject {
+  border: 1px solid #95989A;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.margin0 {
+  margin: 1px 3px;
+}
+
 
 /* users/show ================================ */
 .user-show {
@@ -77,11 +100,13 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 1.2;
+  color: #95989A;
 }
 
 .user p {
-  font-size: 13px;
-  margin-bottom: 15px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #95989A;
 }
 
 .user a {
@@ -97,7 +122,7 @@
 }
 
 .user-tabs {
-  margin-top: 40px;
+  margin-top: 10px;
   background-color: white;
   overflow: hidden;
   box-shadow: 0 2px 6px #c1ced7;
@@ -108,7 +133,7 @@
 }
 
 .user-tabs li.active {
-  border-bottom: 2px solid #3ecdc6;
+  border-bottom: 2px solid #E3DF66;
 }
 
 .user-tabs li.active a {
@@ -121,6 +146,9 @@
   color: #afb6bf;
 }
 
+.skill {
+  margin-top: 20px;
+}
 /* users/new, users/edit ================================ */
 .users-form input {
   margin-bottom: 15px;

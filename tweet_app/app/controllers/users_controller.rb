@@ -36,10 +36,11 @@ class UsersController < ApplicationController
     @user.name = params[:name]
     @user.email =params[:email]
 
-     params[:image]
-      @user.image_name = "#{@user.id}.jpg"
-      image = params[:image]
-      File.binwrite("public/user_images/#{@user.image_name}",image.read)
+      if params[:image]
+          @user.image_name = "#{@user.id}.jpg"
+          image = params[:image]
+          File.binwrite("public/user_images/#{@user.image_name}",image.read)
+      end
 
 
     if @user.save
@@ -52,7 +53,9 @@ class UsersController < ApplicationController
   end
   def destroy
     @user = User.find_by(id:params[:id])
+    @post = Post.where(user_id:params[:id])
     @user.destroy
+    @post.delete_all
 
     redirect_to("/")
     flash[:notice] = "退会しました"

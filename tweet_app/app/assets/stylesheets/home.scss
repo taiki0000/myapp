@@ -70,8 +70,8 @@ header {
   position: absolute;
   z-index: 1;
   width: 100%;
-  background-color: white;
-  opacity: 0.5;
+  background-color: #E3DF66;
+  opacity: 0.8;
 }
 
 .header-logo {
@@ -83,7 +83,7 @@ header {
 }
 /*タイトルロゴ */
 .header-logo a{
-  color: #E3DF66;
+  color: #95989A;
   font-size: 28px;
 }
 
@@ -121,15 +121,30 @@ header {
   font-size: 13px;
 }
 a.btn_black {
-  color: white;
-  background-color: #E3DF66;
+  color: #95989A;
+  background-color: white;
   border: none;
 }
+
+a.btn_y {
+  color: #95989A;
+  background-color: #E3DF66;
+  opacity: 0.75;
+  border: none;
+}
+
 a.btn_black:hover{
     color: white;
     background-color: #e0a800;
     border: none;
 }
+
+a.btn_y:hover{
+  color: #95989A;
+  background-color: white;
+  border: none;
+}
+
 .btnbtn{
   margin: 16px;
 }
@@ -148,7 +163,7 @@ a.btn_black:hover{
   background-repeat: no-repeat;
   background-position: center 50%;
   background-size: cover;
-  background-image: url("/sample.jpg");
+  background-image: url("/good.jpg");
 }
 
 
@@ -173,6 +188,7 @@ a.btn_black:hover{
 .about-main {
   padding: 180px 8% 0;
   color: #343a40;
+  background-color: #ffe8a1;
 }
 
 .about-main h2 {

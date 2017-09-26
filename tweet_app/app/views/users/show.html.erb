@@ -3,15 +3,47 @@
     <div class="user">
       <img src="<%= "/user_images/#{@user.image_name}" %>">
       <!-- ユーザー名 -->
-      <h2><%= @user.name %></h2>
+      <h2><%= "#{@user.name}(23)" %></h2>
       <!-- メールアドレス -->
       <p><%= @user.email %></p>
+      <!-- 学校名・所属機関　-->
+      <p class="belongs"><%= "東京工業大学 修士1年" %></p>
+      <p><%= "理学院物理学専攻宇宙論" %></p>
+      <p class="yourplace"><%= "東京" %></p>
     </div>
     <div class="user-menus">
       <% if @user.id == @current_user.id %>
-          <%= link_to"編集", "/users/#{@user.id}/edit" %>
-          <%= link_to("退会する", "/users/#{@user.id}/destroy", {method:"post"}) %>
+          <%= link_to"編集", "/users/#{@user.id}/edit", class:"btn btn-default btn_y"%>
+          <%= link_to "退会する", "/users/#{@user.id}/destroy", method:"post", class:"btn btn-default btn_y" %>
       <% end %>
+    </div>
+    <div class="skill">
+      <div class="users-index-item">
+        <div class="user-left0">
+          <p><%= "専門分野"%></p>
+        </div>
+        <div class="user-right0">
+          <div class="subject">
+            <p class="margin0"><%= "宇宙論" %></p>
+          </div>
+          <div class="subject">
+            <p class="margin0"><%= "量子情報" %></p>
+          </div>
+        </div>
+      </div>
+      <div class="users-index-item">
+        <div class="user-left0">
+          <p><%= "スキル"%></p>
+        </div>
+        <div class="user-right0">
+          <div class="subject">
+            <p class="margin0"><%= "Ruby on rails" %></p>
+          </div>
+          <div class="subject">
+            <p class="margin0"><%= "python" %></p>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- 自分の投稿といいねした投稿を見れる -->
     <ul class="user-tabs">
