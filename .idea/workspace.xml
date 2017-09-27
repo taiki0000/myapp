@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cc3e2ef-c7cd-4687-99a9-24c652bffbea" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tweet_app/public/sample.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tweet_app/public/sample.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tweet_app/public/user_images/10.jpg" afterPath="$PROJECT_DIR$/tweet_app/public/user_images/10.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tweet_app/app/assets/stylesheets/home.scss" afterPath="$PROJECT_DIR$/tweet_app/app/assets/stylesheets/home.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tweet_app/app/assets/stylesheets/users.scss" afterPath="$PROJECT_DIR$/tweet_app/app/assets/stylesheets/users.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tweet_app/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/tweet_app/app/controllers/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tweet_app/app/views/home/top.html.erb" afterPath="$PROJECT_DIR$/tweet_app/app/views/home/top.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tweet_app/app/views/users/edit.html.erb" afterPath="$PROJECT_DIR$/tweet_app/app/views/users/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tweet_app/app/views/users/new.html.erb" afterPath="$PROJECT_DIR$/tweet_app/app/views/users/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tweet_app/app/views/users/show.html.erb" afterPath="$PROJECT_DIR$/tweet_app/app/views/users/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tweet_app/db/schema.rb" afterPath="$PROJECT_DIR$/tweet_app/db/schema.rb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,16 +48,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tweet_app/config/environments/production.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="top.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tweet_app/app/views/home/top.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -78,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tweet_app/app/assets/stylesheets/home.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+            <state relative-caret-position="242">
+              <caret line="105" column="16" lean-forward="false" selection-start-line="105" selection-start-column="16" selection-end-line="105" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -92,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/tweet_app/app/views/users/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="219">
-              <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+              <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -122,11 +102,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.coffee" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.coffee" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tweet_app/app/assets/javascripts/home.coffee">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tweet_app/app/controllers/home_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -202,8 +192,8 @@
         <option value="$PROJECT_DIR$/tweet_app/Gemfile" />
         <option value="$PROJECT_DIR$/tweet_app/config/database.yml" />
         <option value="$PROJECT_DIR$/tweet_app/app/controllers/users_controller.rb" />
-        <option value="$PROJECT_DIR$/tweet_app/app/assets/stylesheets/home.scss" />
         <option value="$PROJECT_DIR$/tweet_app/app/views/users/new.html.erb" />
+        <option value="$PROJECT_DIR$/tweet_app/app/assets/stylesheets/home.scss" />
       </list>
     </option>
   </component>
@@ -271,7 +261,8 @@
               <item name="myapp" type="462c0819:PsiDirectoryNode" />
               <item name="tweet_app" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
@@ -397,12 +388,12 @@
       <workItem from="1506216467804" duration="53000" />
       <workItem from="1506264873125" duration="3292000" />
       <workItem from="1506428429597" duration="46000" />
-      <workItem from="1506428548928" duration="1109000" />
+      <workItem from="1506428548928" duration="1436000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84061000" />
+    <option name="totallyTimeSpent" value="84388000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -415,8 +406,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="282" y="23" width="1158" height="705" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25896057" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25896057" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -648,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tweet_app/app/controllers/home_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tweet_app/app/controllers/likes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -798,18 +783,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tweet_app/app/assets/stylesheets/home.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tweet_app/app/views/users/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
-          <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+          <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -836,8 +813,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tweet_app/app/assets/javascripts/home.coffee">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tweet_app/app/controllers/home_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tweet_app/app/assets/stylesheets/home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="105" column="16" lean-forward="false" selection-start-line="105" selection-start-column="16" selection-end-line="105" selection-end-column="16" />
           <folding />
         </state>
       </provider>
