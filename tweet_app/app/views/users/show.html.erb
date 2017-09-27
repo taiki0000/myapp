@@ -3,13 +3,13 @@
     <div class="user">
       <img src="<%= "/user_images/#{@user.image_name}" %>">
       <!-- ユーザー名 -->
-      <h2><%= "#{@user.name}(23)" %></h2>
+      <h2><%= "#{@user.name}(#{@user.age})" %></h2>
       <!-- メールアドレス -->
       <p><%= @user.email %></p>
       <!-- 学校名・所属機関　-->
-      <p class="belongs"><%= "東京工業大学 修士1年" %></p>
-      <p><%= "理学院物理学専攻宇宙論" %></p>
-      <p class="yourplace"><%= "東京" %></p>
+      <p class="belongs"><%= @user.belonging %></p>
+      <p><%= @user.course %></p>
+      <p class="yourplace"><%= @user.place %></p>
     </div>
     <div class="user-menus">
       <% if @user.id == @current_user.id %>

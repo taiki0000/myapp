@@ -15,10 +15,17 @@
             <input name="email", value="<%= @user.email %>">
             <p>パスワード</p>
             <input name="password", type="password", value="<%= @user.password %>">
+            <p>年齢</p>
+            <input value="<%= @user.age %>", name="age">
+            <p>大学名/所属機関</p>
+            <input value="<%= @user.belonging %>", name="belonging">
+            <p>学部・学科・専攻・研究室</p>
+            <input value="<%= @user.course %>", name="course">
+            <p>場所</p>
+            <input value="<%= @user.place %>", name="place">
             <input type="submit" value="新規登録">
         <% end %>
       </div>
     </div>
   </div>
 </div>
-<!-- @postのエラーが表示される -->

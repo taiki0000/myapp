@@ -15,6 +15,14 @@
             <input name="image" type="file">
             <p>メールアドレス</p>
             <input value="<%= @user.email %>", name="email">
+            <p>年齢</p>
+            <input value="<%= @user.age %>", name="age">
+            <p>大学名/所属機関</p>
+            <input value="<%= @user.belonging %>", name="belonging">
+            <p>学部・学科・専攻・研究室</p>
+            <input value="<%= @user.course %>", name="course">
+            <p>場所</p>
+            <input value="<%= @user.place %>", name="place">
             <input type="submit" value="保存">
         <% end %>
       </div>

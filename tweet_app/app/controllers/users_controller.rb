@@ -16,6 +16,10 @@ class UsersController < ApplicationController
         name:params[:name],
         email:params[:email],
         password:params[:password],
+        age:params[:age],
+        belonging:params[:belonging],
+        course:params[:course],
+        place:params[:place],
         image_name:"defa.png"
     )
     if @user.save
@@ -35,6 +39,11 @@ class UsersController < ApplicationController
     @user = User.find_by(id:params[:id])
     @user.name = params[:name]
     @user.email =params[:email]
+    @user.age =params[:age]
+    @user.belonging =params[:belonging]
+    @user.course =params[:course]
+    @user.place =params[:place]
+
 
       if params[:image]
           @user.image_name = "#{@user.id}.jpg"
