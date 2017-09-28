@@ -32,6 +32,11 @@
           </div>
         </li>
         <li>
+          <div class="header-right">
+            <div class="login" id="ask-show">Ask Qustion</div>
+          </div>
+        </li>
+        <li>
           <%= link_to "ログアウト", "/logout", {method: :post}%>
         </li>
     <% else %>
@@ -44,6 +49,11 @@
         <li>
           <%= link_to "ログイン", "/login" %>
         </li>
+        <li>
+          <div class="header-right">
+          <div class="login" id="login-show">ログイン</div>
+          </div>
+        </li>
     <% end %>
   </ul>
 </header>
@@ -54,5 +64,18 @@
     </div>
 <% end %>
 <%= yield %>
+
+<script type="text/javascript">
+    $(function() {
+// 「#login-show」要素に対するclickイベントを作成してください
+        $("#login-show").click(function(){
+            $(".overlay").fadeIn();
+        });
+        $("#ask-show").click(function(){
+            $(".overlayA").fadeIn();
+        });
+    });
+</script>
+
 </body>
 </html>

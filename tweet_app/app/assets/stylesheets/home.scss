@@ -7,6 +7,7 @@
   box-sizing: border-box;
 }
 
+
 html {
   font: 100%/1.5 'Avenir Next', 'Hiragino Sans', sans-serif;
   line-height: 1.7;
@@ -63,6 +64,38 @@ body {
   padding-right: 15px;
   clear: both;
 }
+
+.overlay{
+  display: none;
+  width: 100%;
+  height:100%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: rgba(0,0,0,0.7);
+}
+
+.overlay p{
+  color: black;
+}
+
+
+.overlayA{
+  display: none;
+  width: 100%;
+  height:100%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: rgba(0,0,0,0.7);
+}
+
+.overlayA p{
+  color: black;
+}
+
 
 /* ヘッダー ================================ */
 header {
@@ -276,4 +309,86 @@ a.btn_y:hover{
   width: 100%;
   border-radius: 0 0 2px 2px;
   font-size: 14px;
+}
+
+
+
+.login-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  /* display: none;を追加してください */
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+#signup-form, #login-form {
+  width: 100%;
+}
+
+#signup-form h2, #login-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+#signup-form input, #login-form input {
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: #5dca88;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.header-right {
+  float: right;
+  background-color: rgba(255,255,255,0.3);
+  transition: all 0.5s;
+}
+
+.header-right:hover {
+  background-color: rgba(255,255,255,0.5);
+}
+
+.header-right .login {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  cursor: pointer;
+  display: block;
 }
