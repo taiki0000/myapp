@@ -78,6 +78,7 @@ body {
 
 .overlay p{
   color: black;
+  float: left;
 }
 
 
@@ -94,6 +95,7 @@ body {
 
 .overlayA p{
   color: black;
+  float: left;
 }
 
 
@@ -258,6 +260,10 @@ a.btn_y:hover{
   padding: 30px;
 }
 
+.form-body p{
+  font-size: 15px;
+}
+
 .form-error {
   color: #ff4d75;
 }
@@ -391,4 +397,20 @@ a.btn_y:hover{
   color: white;
   cursor: pointer;
   display: block;
+}
+
+
+
+#login-show p{
+  margin-bottom: 6px;
+  background-color: white;
+  color: #95989A;
+  border-color: #E3DF66;
+}
+
+.btn_k a{
+  margin-bottom: 0px;
+  background-color: white;
+  color: #95989A;
+  border-color: #E3DF66;
 }

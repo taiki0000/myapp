@@ -12,3 +12,22 @@
   </p>
   <img class="about-img" src="/sam01.jpg">
 </div>
+<div class="overlay">
+  <div class="form-heading">ログイン</div>
+  <div class="form users-form">
+    <div class="form-body">
+      <% if @error_message %>
+          <div class="form-error">
+            <%= @error_message %>
+          </div>
+      <% end %>
+      <%= form_tag("/login") do %>
+          <p>メールアドレス</p>
+          <input name="email" value="<%= @email %>" >
+          <p>パスワード</p>
+          <input type="password" name="password" value="<%= @password %>">
+          <input type="submit" value="ログイン">
+      <% end %>
+    </div>
+  </div>
+</div>
